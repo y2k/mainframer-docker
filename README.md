@@ -1,3 +1,9 @@
+# Запуск
+
+```bash
+docker run -v "путь-до-id_rsa.pub":/root/.ssh/_authorized_keys -p 22:22 -d --name mf y2khub/mainframer
+```
+
 # Установка docker на elementary OS
 
 ```bash
@@ -20,10 +26,4 @@ sudo apt-add-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt-get update
 sudo apt-get -y install docker-ce
-```
-
-# Установка docker image
-
-```bash
-docker pull y2khub/mainframer
 ```
